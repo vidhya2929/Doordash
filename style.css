@@ -96,7 +96,7 @@ display: block;
 }
 .bannerWhite{
     color: #191919ff;
-    font-family: Medium;
+    font-family: Bold;
     font-size: var(--usage-space-medium);
     font-weight: 500;
     line-height: 20px;
@@ -117,7 +117,7 @@ display: block;
     margin-top: 0px;
 
     color: #606060ff;
-    font-family: Medium;
+    font-family: Bold;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -301,7 +301,7 @@ flex-shrink: 0;
     /* bkpFNW */
     /* box-sizing: border-box; */
     display: flex;
-    flex-grow: column;
+    flex-flow: column;
     /* flex-wrap: nowrap; */
     -webkit-box-align: center;
     align-items: center;
@@ -379,6 +379,7 @@ flex-shrink: 0;
 .doorIn{
     max-width: 100%;
     display: flex;
+    /* font-size: 30px; */
     -webkit-box-align: center;
     align-items: center;
     -webkit-box-pack: start;
@@ -411,7 +412,8 @@ flex-shrink: 0;
 }
 .belowDoor{
     display: flex;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
+    align-items: center;
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
@@ -424,4 +426,541 @@ flex-shrink: 0;
     -webkit-box-pack: center;
     justify-content: center;
     margin-bottom: 24px;
+}
+.heading1{
+    box-sizing: border-box;
+    color: rgb(255,255,255);
+    text-align: center;
+    font-family: Bold;
+    font-size: 23px;
+    line-height: 28px;
+    text-align: center;
+    max-width: 350px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.loginAdd{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 120px;
+    max-width: 100%;
+}
+.searchBar{
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 40px;
+    max-width: 100%;
+}
+.searchBar2{
+    border-radius: 32px;
+    margin-bottom: 16px;
+
+
+    font-family: Medium;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    font-weight: 500;
+    color: #191919ff;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 202px;
+    z-index: 1;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 6px;
+    border: none;
+    box-shadow: 1px;
+    background-color: #ffffffff;
+}
+.searchBarIn{
+    max-width: 100%;
+    margin-right: 12px;
+
+    color: rgb(25,25,25);
+    display: block;
+}
+.iconSearch{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 24px;
+    pointer-events: none;
+}
+.searchIcon{
+    overflow: hidden;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    color: rgb(25,25,25);
+}
+.enterAdd{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    background: inherit;
+    letter-spacing: -0.01px;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: Medium;
+    line-height: 22px;
+    max-width: 100%;
+    margin-right: 12px;
+    background-attachment: scroll;
+    background-color: rgb(255,255,255);
+    display: block;
+    color: rgb(25,25,25);
+    font-family: Medium;
+}
+.homeAdd{
+    /* text-overflow: ellipsis; */
+    font-family: Medium;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    outline: none;
+    display: flex;
+    background: inherit;
+    color: currentColor;
+    appearance: none;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    background-color: rgb(255,255,255);
+}
+.arrow{
+    max-width: 100%;
+    margin-right: 0px;
+    box-sizing: border-box;
+    color: rgb(25,25,25);
+    display: block;
+}
+.arrowButton{
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    display: inline-flex;
+    min-height: 40px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s ease-in-out,0.15s ease-in-out;
+    text-decoration: none;
+    user-select: none;
+    text-align: center;
+    background-color: #ffffffff;
+    box-shadow: 1px;
+    color: #191919ff;
+    height: 40px;
+    width: 40px;
+    padding: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.arrowIcon{
+    flex-shrink: 0;
+    fill: none;
+    font-size: 13.3333px;
+    overflow: hidden;
+    text-align: center;
+}
+.paddingBuutton{
+    display: block;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    transition: 0.15s ease-in-out;
+    opacity: 1;
+}
+.log{
+    margin-top: 16px;
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    -webkit-box-align: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s ease-in-out,0.15s ease-in-out;
+    user-select: none;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ffffffff;
+    box-shadow: 0px 2px 8px 0px #19191933;
+    color: #19191933;
+}
+.login2{
+    display: block;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    transition: 0.15s ease-in-out;
+    opacity: 1;
+    padding: 0px 12px;
+    cursor: pointer;
+}
+.login3{
+    max-width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.login4{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 2;
+    min-width: 0px;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+.human{
+    width: 16px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.humanImg{
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+.loginBar{
+    -webkit-box-flex: 2;
+    flex-grow: 2;
+    align-items: center;
+    min-width: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.loginBar2{
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(25,25,25);
+    font-family: Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+}
+.browse{
+    width: 100%;
+    display: block;
+    flex-grow: 1;
+    margin: 0px auto;
+    flex: 1 0 auto;
+}
+.marginBrowse{
+    margin: 20px 20px;
+    box-sizing: border-box;
+    display: block;
+}
+.paddingBrowse{
+    border-radius: 12px;
+    box-sizing: border-box;
+    border-width: 0.6666667;
+    border: 1px solid #f1f1f1ff;
+    padding: 20px;
+    background-color: #f7f7f7ff;
+    max-width: 100%;
+    display: block;
+}
+.appDownload{
+    display: flex;
+    text-align: left;
+}
+.logo2{
+    width: 60px;
+    height: 40px;
+    display: block;
+    width: 57.3333px;
+    border-radius: 12px;
+    border: 1px solid #f1f1f1ff;
+    background-color: #ffffffff;
+    margin-right: 8px;
+    padding: 8px;
+    text-align: left;
+}
+.doorPic{
+    flex-shrink: 0;
+    box-sizing: border-box;
+    fill: none;
+    overflow: hidden;
+    text-align: left;
+}
+.browseWirting{
+    max-width: 100%;
+    display: block;
+    box-sizing: border-box;
+    text-align: left;
+}
+.Browsee{
+    color: #191919ff;
+    font-family: Bold;
+    font-size: 18px;
+    font-weight:599;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+}
+.zeroDelivery{
+    margin-left: 4px;
+    margin-top: 2px;
+    color: rgb(96,96,96);
+    display: block;
+    font-family: Medium;
+    font-size: 14px;
+    font-weight: 399;
+    letter-spacing: -0.01px;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: left;
+}
+.ratin{
+    margin-top: 2px;
+    margin-bottom: 16px;
+    max-width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: row;
+}
+.halfStar{
+    flex-shrink: 0;
+    box-sizing: border-box;
+    fill: none;
+    margin-right: 2px;
+    overflow: hidden;
+    text-align: left;
+}
+.millionRating{
+    margin-left: 4px;
+    color: #606060ff;
+    font-family: Medium;
+    font-size: 14px;
+    font-weight: 399;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+}
+.continue{
+    margin-top: 16px;
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+    width: 100%;
+    -webkit-box-align: center;
+    justify-content: center;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s ease-in-out,0.15s ease-in-out;
+    user-select: none;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: rgba(25,25,25,0) 0px 0px 0px 0px;
+    background-color: #eb1700ff;
+    color: #ffffffff;
+}
+.continueIn{
+    display: flex;
+    -webkit-box-flex: 2;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-grow: 2;
+    min-width: 0px;
+    max-width: 100%;
+    transition: 0.15s ease-in-out;
+    opacity: 1;
+    padding: 0px 12px;
+    color: rgb(255,255,255);
+}
+.appContinue{
+    -webkit-box-flex: 2;
+    flex-grow: 2;
+    min-width: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.buttonContinue{
+    width: 100%;
+    color: rgb(255,255,255);
+    font-family: Bold;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+}
+.disContent{
+    display: content;
+    box-sizing: border-box;
+}
+.belowContinue{
+    max-width: 768px;
+    margin: 0px auto;
+}
+.threePadding{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 40px;
+    max-width: 100%;
+    padding: 8px 8px;
+}
+.threeOne{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+.oneCont,.twoCont,.threeCont{
+    box-sizing: border-box;
+    margin-left: -75px;
+    display: flex;
+    width: 100%;
+    min-width: 360px;
+    flex-flow: row;
+    max-width: 100%;
+    padding: 16px 16px;
+}
+.firstPic,.secondPic{
+    margin-right: 32px;
+    box-sizing: border-box;
+    display: block;
+}
+.firstpicText{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 250px;
+}
+.firstpicText2{
+    max-width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.firstpicText3,.firstpicText4{
+    color: #191919ff;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    text-align: left;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.firstpicText3{
+     font-family: Bold;
+    font-size: 32px;
+    font-weight: 700;
+     line-height: 40px;
+}
+.firstpicText4{
+    font-family: Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.redArrow{
+    border: 0px;
+    padding: 0px;
+    margin-top: 12px;
+    outline: 0px;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.redArrow1{
+    color: #eb1700ff;
+    font-family: Bold;
+    font-size: 14px;
 }
