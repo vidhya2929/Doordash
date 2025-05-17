@@ -1,3 +1,6 @@
+/* *{
+    box-sizing: border-box;
+} */
 body{
     -webkit-font-smoothing: antialiased;
     font-variant-ligatures: no-common-ligatures;
@@ -475,14 +478,13 @@ flex-shrink: 0;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    width: 202px;
+    width: 100%;
     z-index: 1;
     padding-bottom: 6px;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 6px;
     border: none;
-    box-shadow: 1px;
     background-color: #ffffffff;
 }
 .searchBarIn{
@@ -517,7 +519,7 @@ flex-shrink: 0;
     font-family: Medium;
     line-height: 22px;
     max-width: 100%;
-    margin-right: 12px;
+    margin-right: 0px 12px 0px auto;
     background-attachment: scroll;
     background-color: rgb(255,255,255);
     display: block;
@@ -909,24 +911,24 @@ flex-shrink: 0;
     max-width: 100%;
     padding: 16px 16px;
 }
-.firstPic,.secondPic{
+.firstPic,.secondPic,.thirdPic{
     margin-right: 32px;
     box-sizing: border-box;
     display: block;
 }
-.firstpicText{
+.firstpicText,.secondText{
     box-sizing: border-box;
     display: flex;
     flex-flow: column;
     width: 100%;
     max-width: 250px;
 }
-.firstpicText2{
+.firstpicText2,.secondText2,.thirdText2{
     max-width: 100%;
     display: block;
     box-sizing: border-box;
 }
-.firstpicText3,.firstpicText4{
+.firstpicText3,.firstpicText4,.secondText3,.secondText4,.thirdText3,.thirdText4{
     color: #191919ff;
     letter-spacing: -0.01px;
     text-decoration: none;
@@ -936,13 +938,14 @@ flex-shrink: 0;
     margin: 0px;
     padding: 0px;
 }
-.firstpicText3{
+.firstpicText3,.secondText3,.thirdText3{
      font-family: Bold;
     font-size: 32px;
     font-weight: 700;
      line-height: 40px;
 }
-.firstpicText4{
+.firstpicText4,.secondText4,.thirdText4{
+    margin-top: 0px;
     font-family: Medium;
     font-size: 18px;
     font-weight: 500;
@@ -963,4 +966,466 @@ flex-shrink: 0;
     color: #eb1700ff;
     font-family: Bold;
     font-size: 14px;
+}
+.downImage,.downHalf,.downImg,.secHalf,.secImg,.scrollFirst{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.quarterHalf{
+    box-sizing: border-box;
+    margin-bottom: -300px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.justImg,.dashLess,.plasticImg,.wrappScroll{
+    /* width: 135.333px; */
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.downText,.secTex,.plasticText{
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.plasticText1{
+    text-align: left;
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin-top: 10px;
+    padding: 0px;
+}
+.everyThing,.dashPass,.plasticHead{
+    text-align: left;
+    max-width: 90%;
+    margin-top: 20px;
+    color: #191919ff;
+    font-family: Bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    /* white-space: nowrap; */
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.your_fav{
+    text-align: left;
+    color: #191919ff;
+    font-family: Bold;
+    font-size: 18px;
+    font-weight: 599;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+}
+.yourFavcont,.membersGet{
+    text-align: left;
+    color: #191919ff;
+    font-size: 14px;
+    font-family: Medium;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0,01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 0px;
+}
+.reddBut,.butpad,.plasticCont{
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.linkk,.getDash{
+    position: relative;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: inline-flex;
+    min-height: 32px;
+    width: auto;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s ease-in-out 0.15s ease-in-out;
+    user-select: none;
+    text-decoration: none;
+    text-align: center;
+    background-color: #eb1700ff;
+    color: #ffffffff;
+}
+.findResta,.redCon{
+    display: block;
+    box-sizing: border-box;
+    color: rgb(255,255,255);
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    transition: 0.15s ease-in-out;
+    opacity: 1;
+    padding: 0px 12px;
+}
+.findRestpadd,.redCon1{
+    max-width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.findRestpadd1,.redCon2{
+    -webkit-box-flex: 2;
+    flex-grow: 2;
+    min-width: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.findRestaorgi,.redCon3{
+    width: 100%;
+    color: currentColor;
+    font-family: Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+}
+.pinkPa{
+    background-color: rgb(254,241,238);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    padding-top: 320px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.getGro{
+    background:url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png") center center / cover;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    height: 350px;
+}
+.getGrobor{
+     background-color: rgba(30,30,30,0.6);
+     top: 0px;
+     left: 0px;
+     width: 100%;
+     height: 100%;
+     position: relative;
+     z-index: 1;
+     display: flex;
+     flex-direction: row;
+     -webkit-box-pack: center;
+     text-align: center;
+     box-sizing: border-box;
+}
+.getGromar{
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 550px;
+}
+.headGetgro{
+    text-align: center;
+    color: white;
+    filter: drop-shadow(rgba(0,0,0.2)0px 2px 8px);
+    max-width: 90%;
+    font-family: Bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.groDeli{
+    text-align: center;
+    color: white;
+    filter: drop-shadow(rgba(0,0,0,0.2) 0px 2px 8px);
+    font-family: Bold;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+}
+.shopFrom{
+    text-align: center;
+    color: white;
+    filter: drop-shadow(rgba(0,0,0,0.2) 0px 2px 8px);
+    font-family: Bold;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+}
+.shopgroBut{
+    margin-top: 20px;
+}
+.plasticBag,.plasticBorder,.scrollSecond,.scrollThird,scrollFour{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+.plasticPadding{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.helpYou{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgb(254,241,238);
+    padding: 40px 20px 20px;
+    width: 100%;
+}
+.helpText{
+    text-align: center;
+    max-width: 300px;
+    color: #191919ff;
+    font-family: Bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.columnScroll{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100%;
+    background-color: rgb(254,241,238);
+}
+.firstscroll,.secondScroll,.thirdScroll{
+    margin-left: 5%;
+    margin-right: -10%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.returnPack,.flowersFor,.RestockBar,.whatYour{
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.returnPack1,.flowersFor2,.RestockBar2,.whatYour2{
+    text-align: center;
+    max-width: 90%;
+    margin-top: 20px;
+    color: #191919ff;
+    font-family: Bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.reqPackage,.shopHand,.hostInga,.finallySome{
+    text-align: center;
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px
+}
+.tryPadding,.flowerPadding,.alcoholPadding,.finallyPadding,.partnerBut{
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+.flowers,.miniBar,.doggyNeed,.carrImg,.womenImg{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.fourScroll{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.mustBe{
+    text-align: center;
+    margin-top: 10px;
+    color: #191919ff;
+    font-family: Bold;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.unLock{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: #ffffffff;
+    padding: 40px 20px 20px;
+    width: 100%;
+}
+.unlockOpp{
+    text-align: center;
+    max-width: 300px;
+    color: #191919ff;
+    font-family: Bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+.carImg{
+    margin-bottom: -300px;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    min-width: 90%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.newCarimg,.carImg1,.becomeButton,.paddingPink,.imgWomen{
+    width: 100%;
+    box-sizing: border-box;
+}
+.signText,.growBusi{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.Signuphead,.growBusi2{
+    text-align: left;
+    max-width: 90%;
+    color: #191919ff;
+    font-family: Bold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+}
+.SignPara,.busiText{
+    text-align: left;
+    color: #191919ff;
+    font-family: Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.paddingPink1{
+    background-color: rgb(254,241,238);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 90%;
+    -webkit-box-align: center;
+    padding-top: 320px;
 }
