@@ -1436,6 +1436,10 @@ flex-shrink: 0;
     box-sizing: border-box;
 }
 .getMorepadding{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
     width: 100%;
     margin: 0px auto;
     box-sizing: border-box;
@@ -1663,7 +1667,8 @@ flex-shrink: 0;
     text-decoration: none;
     text-transform: none;
     display: block;
-    margin: 0px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     padding: 0px;
 }
 .footerRest{
