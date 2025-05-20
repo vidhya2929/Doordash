@@ -189,18 +189,6 @@ display: block;
     margin: 0px;
     padding: 0px;
 }
-.bannerText3{
-    color:#606060ff;
-    font-weight: 700;
-    font-size: 20px;
-    font-family: Medium;
-    text-transform: none;
-    text-decoration: none;
-    display: block;
-    white-space: nowrap;
-    margin: 0px;
-    padding: 0px;
-}
 .bannerRating{
     max-width: 100%;
     display: flex;
@@ -641,7 +629,7 @@ flex-shrink: 0;
     max-width: 100%;
     transition: 0.15s ease-in-out;
     opacity: 1;
-    padding: 0px 12px;
+    padding: 0px 14px;
     cursor: pointer;
 }
 .login3{
@@ -821,7 +809,7 @@ flex-shrink: 0;
     text-align: left;
 }
 .millionRating{
-    margin-left: 4px;
+    margin-left: 4px  !important;
     color: #606060ff;
     font-family: Medium;
     font-size: 14px;
@@ -923,34 +911,26 @@ flex-shrink: 0;
     -webkit-box-pack: center;
     justify-content: center;
     flex-direction: column;
-    margin: 40px;
+    margin: 40px 0px;
     max-width: 100%;
     padding: 8px;
-   
     box-sizing: border-box;
 }
 .threeOne{
     display: flex;
     -webkit-box-pack: center;
-
-    justify-content: space-between;
-    gap: 24px;
-
+    justify-content: center;
     height: 100%;
     flex-direction: column;
 }
 .oneCont,.twoCont,.threeCont{
     box-sizing: border-box;
-    margin-left: -60px;
     display: flex;
-
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: flex-start;
-
-
     width: 100%;
     min-width: 360px;
-    /* flex-flow: row; */
+    flex-flow: row;
     max-width: 100%;
     padding-bottom: 16px;
     padding-left: 16px;
@@ -984,23 +964,28 @@ flex-shrink: 0;
     text-transform: none;
     text-align: left;
     display: block;
+    width: auto;
+    white-space: normal;
     margin: 0px;
     padding: 0px;
 }
 .firstpicText3,.secondText3,.thirdText3{
      font-family: Bold;
+     display: block;
     font-size: 32px;
     font-weight: 700;
-
      line-height: 32px;
-
      margin-bottom: 8px;
+    width: auto;
+    white-space: normal;
 }
 .firstpicText4,.secondText4,.thirdText4{
     margin-top: 0px;
     font-family: Medium;
     font-size: 18px;
     font-weight: 500;
+     width: auto;
+    white-space: normal;
     line-height: 24px;
 }
 .redArrow{
@@ -1018,6 +1003,7 @@ flex-shrink: 0;
     color: #eb1700ff;
     font-family: Bold;
     font-size: 14px;
+    margin-right: 5px;
 }
 .downImage,.downHalf,.downImg,.secHalf,.secImg,.scrollFirst{
     width: 100%;
@@ -1096,18 +1082,19 @@ flex-shrink: 0;
 }
 .yourFavcont,.membersGet{
     text-align: left;
+    align-items: flex-start;
     color: #191919ff;
     font-size: 14px;
     font-family: Medium;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: -0,01px;
     text-decoration: none;
     text-transform: none;
     display: block;
     margin: 0px;
     margin-top: 10px;
     padding: 0px;
+    letter-spacing: -0,01px;
 }
 .reddBut,.butpad,.plasticCont{
     margin-top: 20px;
@@ -1234,8 +1221,9 @@ flex-shrink: 0;
     text-decoration: none;
     text-transform: none;
     display: block;
-    margin: 0px;
     padding: 0px;
+    padding-left: 11px;
+    margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -1527,11 +1515,14 @@ flex-shrink: 0;
 }
 .topCities1{
     flex-direction: row;
+    border-bottom: 2px solid transparent !important;
+    box-shadow: 0 2px 0 #f1f1f1ff;
 }
 .topCities{
      flex-direction: column;
 }
 .topCities2,.topCuiborder,.topChainsborder{
+    border-bottom: 2px solid transparent !important;
     box-sizing: border-box;
     width: 33.33%;
     display: flex;
@@ -1546,6 +1537,8 @@ flex-shrink: 0;
 }
 .topCities2{
     box-shadow: 0 3px 0 #191919;
+    padding-bottom: 12px;
+    transition: 0.15s ease-in-out, 0.15s ease-in-out;
 }
 .topCity{
     color: #191919ff;
@@ -1998,7 +1991,7 @@ flex-shrink: 0;
     justify-content: center;
     margin-bottom: 10px;
 }
-.whiteArrow,.signInsignUp,.locAtion{
+.signInsignUp,.locationIcon,.warrow,.flexpadd{
     display: none;
 }
 .faceBook{
@@ -2011,21 +2004,13 @@ flex-shrink: 0;
     color: inherit;
 }
 @media screen and (min-width:768px){
-.bannerContent2,.loginOpen,.searchIcon{
+.bannerContent2,.loginOpen,.searchBarIn,.arrow{
     display: none;
 }
 .redBg{
     margin-top: -16px;
     height: 650px;
     padding: 0px 8px;
-}
-.belowDoor{
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
 }
 .doorDash{
     margin-top: 24px;
@@ -2043,40 +2028,23 @@ flex-shrink: 0;
     min-height: 40px;
 }
 .searchBar2{
+    width:408px;
     border-radius: 32px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-right: 8px;
-    padding-left: 4px;
+    padding-left: 20px;
+    line-height: 22px;
+    display: flex;
+    -webkit-box-align:center;
+    align-items: center;
 }
-.loginBar2,.arrowIcon{
+.loginBar2,.arrow{
     display: none;
 }
-.arrowButton{
-    background: #eb1700ff;
-    color: #ffffffff;
-    position: relative;
-    max-width: 100%;
-    margin: 0px;
-    display: inline-flex;
-    min-height: 40px;
-    border-radius: 9999px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 0 0 0 1px;
-    height: 40px;
-    width: 40px;
-    align-items: center;
-    justify-content: center;
-}
-.whiteArrow{
-    fill: none;
-    height: 24;
-    width: 24;
-    flex-shrink: 0;
-}
 .signInsignUp{
+    position: relative;
+    top: -80px;
     padding-left: 16px;
     padding-right: 24px;
     display: flex;
@@ -2110,26 +2078,152 @@ flex-shrink: 0;
     position: relative;
     max-width: 100%;
     margin: 0px;
-    padding: 0px 12px;
     display: inline-flex;
-    min-height: 40px;
-    width: auto;
+    min-height: 40px;   
     -webkit-box-align: center;
     align-items: center;
     justify-content: flex-start;
-    border-radius: 9999px;
+    
     white-space: nowrap;
 }
+.signIn{
+    padding: 0px 12px;
+}
 .signUpp{
+    padding: 0px 12px;
     color: #606060ff;
+    width: auto;
+    border-radius: 9999px;
+}
+.belowContent{
+    display: none;
+}
+.belowDoor{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 408px;
+    justify-content: center;
+}
+.locationIcon{
+    max-width: 100%;
+    margin-right: 5px;
+    /* padding-left: 10px; */
+    color: #606060ff;
+    display: block;
+}
+.iconLocation{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 24px;
+    pointer-events: none;
 }
 .locAtion{
     overflow: hidden;
     flex-shrink: 0;
     box-sizing: border-box;
-    color: #606060ff; 
+    color: #606060ff;
+    align-items: center;
+    justify-content: center;
 }
-.belowContent{
-    display: none;
+.arrowButton{
+    background-color: #eb1700ff;
+}
+.warrow{
+    max-width: 100%;
+    margin-right: 0px;
+    box-sizing: border-box;
+    color: rgb(25,25,25);
+    display: block;
+}
+.belowContinue{
+    max-width: 768px;
+    margin: 0px auto;
+}
+.threePadding{
+    margin: 32px 0px;
+}
+.firstPic,.secondPic,.thirdPic{
+    margin-right: 64px;
+}
+.scooterImg,.houseImg,.phoneImg{
+    width: 124px;
+    height: 124px;
+}
+.firstpicText3,.secondText3,.thirdText3{
+    line-height: 40px;
+}
+.oneCont,.twoCont,.threeCont{
+    align-items: center;
+    justify-content: center;
+}
+.quarterHalf{
+    margin: 0px 0px -60px;
+    flex-direction: row-reverse;
+}
+.justImg,.dashLess{
+    height: 500px;
+}
+.dashLess{
+    width: 302px;
+}
+.everyThing,.dashPass{
+   font-size: 40px; 
+   line-height: 40px;
+}
+.your_fav{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.yourFavcont{
+    font-size: 16px;
+    line-height: 22px;
+}
+.linkk{
+    margin: 0px;
+    padding: 0px;
+    min-height: 40px;
+}
+.flexxp{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+    max-width: 1148px;
+}
+.downText{
+    justify-content: center;
+}
+.findRestaorgi{
+    font-size: 16px;
+}
+.pinkPa{
+    flex-flow: row;
+    justify-content: center;
+    padding: 20px;
+    min-width: 90%;
+    padding-top: 80px !important;
+}
+.paddFlex{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    max-width:1184px;
+    box-sizing: border-box;
+}
+.secImg{
+    width: 302px;
+}
+.secTex{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 }
