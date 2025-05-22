@@ -292,8 +292,8 @@ flex-shrink: 0;
 .rest_banner{
     display: flex;
     flex-direction: column;
-        -webkit-box-pack: start;
-        justify-content: flex-start;
+    -webkit-box-pack: start;
+     justify-content: flex-start;
     -webkit-box-align: center;
     align-items: center;
     box-sizing: border-box;
@@ -1021,11 +1021,10 @@ flex-shrink: 0;
     align-items: center;
 }
 .justImg,.dashLess,.plasticImg,.wrappScroll{
-    /* width: 135.333px; */
     width: 100%;
     height: 180px;
     object-fit: cover;
-    margin-bottom: 20px;
+    display: block;
 }
 .downText,.secTex,.plasticText{
     box-sizing: border-box;
@@ -1094,7 +1093,7 @@ flex-shrink: 0;
     margin: 0px;
     margin-top: 10px;
     padding: 0px;
-    letter-spacing: -0,01px;
+    letter-spacing: -0.01px;
 }
 .reddBut,.butpad,.plasticCont{
     margin-top: 20px;
@@ -1103,14 +1102,15 @@ flex-shrink: 0;
 .linkk,.getDash{
     position: relative;
     max-width: 100%;
-    margin-top: -20px;
-    margin-bottom: 10px;
+    /* margin-top: -20px;
+    margin-bottom: 10px; */
     padding: 0px;
     display: inline-flex;
     min-height: 32px;
     width: auto;
     -webkit-box-align: center;
     align-items: center;
+    text-align: left;
     -webkit-box-pack: start;
     justify-content: flex-start;
     border-radius: 9999px;
@@ -1183,7 +1183,7 @@ flex-shrink: 0;
 .getGro{
     background:url("https://img.cdn4dd.com/cdn-cgi/image/fit=cover,format=auto,quality=60/https://cdn.doordash.com/managed/consumer/seo/home/landing_cta/grocery_desktop.png") center center / cover;
     position: relative;
-    display: block;
+    /* display: block; */
     box-sizing: border-box;
     height: 350px;
 }
@@ -1204,12 +1204,18 @@ flex-shrink: 0;
 .getGromar{
     -webkit-box-align: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     margin-top: auto;
     margin-bottom: auto;
     max-width: 550px;
 }
 .headGetgro{
     text-align: center;
+    align-items: center;
+     margin-top: 20px !important;
     color: white;
     filter: drop-shadow(rgba(0,0,0.2)0px 2px 8px);
     max-width: 90%;
@@ -1221,11 +1227,12 @@ flex-shrink: 0;
     text-decoration: none;
     text-transform: none;
     display: block;
+    justify-content: center;
     padding: 0px;
-    padding-left: 11px;
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    /* padding-left: 11px;
+    margin-left: 10px; */
+    margin: 0px;
+    /* margin-bottom: 10px; */
 }
 .groDeli{
     text-align: center;
@@ -1247,7 +1254,7 @@ flex-shrink: 0;
     text-align: center;
     color: white;
     filter: drop-shadow(rgba(0,0,0,0.2) 0px 2px 8px);
-    font-family: Bold;
+    font-family: Medium;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -1685,7 +1692,8 @@ flex-shrink: 0;
     text-decoration: none;
     text-transform: none;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
+    margin: 0px;
     padding: 0px;
 }
 .popuCat2{
@@ -1704,8 +1712,7 @@ flex-shrink: 0;
 .alcoholAust{
     text-decoration: none;
     transition: filter 0.2s;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    /* margin-top: 8px; */
     color: inherit;
     cursor: pointer;
     
@@ -1720,8 +1727,8 @@ flex-shrink: 0;
     text-decoration: none;
     text-transform: none;
     display: block;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin: 0px;
+    margin-top: 8px !important;
     padding: 0px;
 }
 .footerRest{
@@ -1739,8 +1746,7 @@ flex-shrink: 0;
     gap: 12px;
     padding-top: 32px;
 }
-.GetTo{
-    margin-bottom: 15px;
+.GetTo,.letUs2{
     color: rgb(255,255,255);
     font-family: Medium;
     font-size: 16px;
@@ -1751,6 +1757,16 @@ flex-shrink: 0;
     text-transform: none;
     display: block;
     padding: 0px;
+    margin-bottom: 8px !important;
+    margin: 0px;
+}
+.GetTo{
+    margin-bottom: 16px !important;
+}
+.letUs{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
 }
 .aboutUs{
     text-decoration: none;
@@ -1890,8 +1906,9 @@ flex-shrink: 0;
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: center;
-   margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     justify-content: center;
+    padding: 12px;
     box-sizing: border-box;
 }
 .lang2{
@@ -1918,6 +1935,7 @@ flex-shrink: 0;
     display: flex;
     -webkit-box-align: center;
     align-items: center;
+    justify-content: center;
     width: 100%;
     border-radius: 16px 16px;
     z-index: 1;
@@ -1989,23 +2007,30 @@ flex-shrink: 0;
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
-    margin-bottom: 10px;
+    align-items: center;
+    box-sizing: border-box;
+    margin-right: 12px;
 }
-.signInsignUp,.locationIcon,.warrow,.flexpadd{
+.signInsignUp,.locationIcon,.warrow,.flexpadd,.fullScr,.resCol,.resPlastic,.resJustimg{
     display: none;
 }
 .faceBook{
     opacity: 0.7;
     cursor: pointer;
     transition: 0.2s;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-left: 12px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
     text-decoration: none;
     color: inherit;
 }
+
 @media screen and (min-width:768px){
-.bannerContent2,.loginOpen,.searchBarIn,.arrow{
+.bannerContent2,.loginOpen,.searchBarIn,.arrow,.columnScroll,.plasticImg,.justImg{
     display: none;
+}
+.fullScr,.resCol{
+    display: block;
 }
 .redBg{
     margin-top: -16px;
@@ -2176,6 +2201,9 @@ flex-shrink: 0;
 .everyThing,.dashPass{
    font-size: 40px; 
    line-height: 40px;
+   text-align: left;
+   justify-content: left;
+   align-items: left;
 }
 .your_fav{
     margin-top: 20px;
@@ -2224,6 +2252,165 @@ flex-shrink: 0;
 .secTex{
     text-align: center;
     justify-content: center;
+    align-items: center;
+}
+.membersGet{
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 20px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+.redCon3{
+    font-size: 16px;
+}
+.getDash{
+    text-align: left;
+    align-items: left;
+    align-items: left;
+     min-height: 40px;
+}
+.getGro{
+    height: 600px;
+}
+.getGromar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.headGetgro{
+    font-size: 40px;
+    line-height: 40px;
+}
+.groDeli{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+}
+.shopFrom{
+    font-size: 16px;
+    line-height: 22px;
+}
+.shopgroBut{
+    margin-top: 30px;
+}
+.plasticPadding{
+    padding-top: 60px;
+    margin-bottom: -40px;
+}
+.flexPlas{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 60px;
+    max-width: 1184px;
+}
+.plasticImg{
+    height: 500px;
+    /* display: block; */
+}
+.plasticHead{
+    font-size: 40px;
+    line-height: 40px;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
+.plasticText1,.reqPackage,.shopHand,.hostInga,.finallySome{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.plasticText
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.helpYou{
+    padding: 60px 20px 40px;
+}
+.helpText{
+    max-width: 500px;
+    font-size: 32px;
+    line-height: 40px;
+}
+.fullScr{
+    display: flex;
+    background-color: rgb(254,241,238);
+    flex-flow: wrap;
+    width: 100%;
+    max-width: 1184px;
+}
+.resCol{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.firstscroll,.secondScroll,.thirdScroll,.fourScroll{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-width: 50%;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 100%;
+}
+.scrollFirst,.scrollSecond,.scrollThird,.scrollFour{
+    position: relative;
+    width: 100%;
+}
+.resWrapp,.resFlowerss,.resMinibarr,.resDoggyneed{
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.resMinibarr{
+    height: 344px;
+    width: 307px;
+}
+.returnPack1,.flowersFor2,.RestockBar2,.whatYour2{
+    margin-top: 20px;
+    font-size: 40px;
+    line-height: 40px;
+}
+.tryPadding,.flowerPadding,.alcoholPadding,.finallyPadding{
+    margin-top: 30px;
+}
+.mustBe{
+    margin-top: 20px;
+    font-family: Medium;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+.resPlastic,.resJustimg{
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.unLock{
+    padding: 60px 20px 40px;
+}
+.unlockOpp{
+    max-width: 500px;
+    font-size: 32px;
+    line-height: 40px;
+}
+.carImg{
+    flex-direction: row-reverse;
+    margin-bottom: -60px;
+    display: flex;
+    padding: 20px;
+    min-width: 90%;
+    -webkit-box-align: center;
     align-items: center;
 }
 }
