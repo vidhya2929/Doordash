@@ -640,6 +640,7 @@ flex-shrink: 0;
     -webkit-box-pack: center;
     justify-content: center;
     flex-direction: row;
+    gap: 2px;
 }
 .login4{
     -webkit-box-flex: 1;
@@ -1185,6 +1186,9 @@ flex-shrink: 0;
     position: relative;
     /* display: block; */
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 350px;
 }
 .getGrobor{
@@ -1198,6 +1202,8 @@ flex-shrink: 0;
      display: flex;
      flex-direction: row;
      -webkit-box-pack: center;
+     justify-content: center;
+     place-content: center;
      text-align: center;
      box-sizing: border-box;
 }
@@ -1671,7 +1677,10 @@ flex-shrink: 0;
 }
 .popuCat{
     max-width: 1160px;
-    padding: 0px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -1692,7 +1701,7 @@ flex-shrink: 0;
     text-decoration: none;
     text-transform: none;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 8px !important;
     margin: 0px;
     padding: 0px;
 }
@@ -1759,9 +1768,6 @@ flex-shrink: 0;
     padding: 0px;
     margin-bottom: 8px !important;
     margin: 0px;
-}
-.GetTo{
-    margin-bottom: 16px !important;
 }
 .letUs{
     padding-top: 32px;
@@ -1839,7 +1845,7 @@ flex-shrink: 0;
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    padding: 32px;
+    padding: 32px 0px;
 }
 .lstfooCon{
     margin-top: 12px;
@@ -2011,7 +2017,7 @@ flex-shrink: 0;
     box-sizing: border-box;
     margin-right: 12px;
 }
-.signInsignUp,.locationIcon,.warrow,.flexpadd,.fullScr,.resCol,.resPlastic,.resJustimg{
+.signInsignUp,.locationIcon,.warrow,.fullScr,.resCol,.resPlastic,.resJustimg,.rescarr,.resmenImg,.signSave{
     display: none;
 }
 .faceBook{
@@ -2026,10 +2032,10 @@ flex-shrink: 0;
 }
 
 @media screen and (min-width:768px){
-.bannerContent2,.loginOpen,.searchBarIn,.arrow,.columnScroll,.plasticImg,.justImg{
+.bannerContent2,.loginOpen,.searchBarIn,.arrow,.columnScroll,.plasticImg,.justImg,.carrImg,.womenImg,.signSave{
     display: none;
 }
-.fullScr,.resCol{
+.fullScr,.resCol,.rescarr,.resmenImg,.resPlastic,.resJustimg{
     display: block;
 }
 .redBg{
@@ -2108,7 +2114,7 @@ flex-shrink: 0;
     -webkit-box-align: center;
     align-items: center;
     justify-content: flex-start;
-    
+    padding-right: 50px;
     white-space: nowrap;
 }
 .signIn{
@@ -2250,9 +2256,11 @@ flex-shrink: 0;
     width: 302px;
 }
 .secTex{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
+    text-align: left;
 }
 .membersGet{
     font-size: 16px;
@@ -2267,7 +2275,6 @@ flex-shrink: 0;
 }
 .getDash{
     text-align: left;
-    align-items: left;
     align-items: left;
      min-height: 40px;
 }
@@ -2301,7 +2308,7 @@ flex-shrink: 0;
     padding-top: 60px;
     margin-bottom: -40px;
 }
-.flexPlas{
+.flexPlas,.carPadd{
     display: flex;
     flex-direction: row-reverse;
     gap: 60px;
@@ -2318,16 +2325,18 @@ flex-shrink: 0;
     justify-content: left;
     align-items: left;
 }
-.plasticText1,.reqPackage,.shopHand,.hostInga,.finallySome{
+.plasticText1,.reqPackage,.shopHand,.hostInga,.finallySome,.SignPara,.busiText{
     margin-top: 20px;
     font-size: 16px;
     line-height: 22px;
 }
 .plasticText
 {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
 }
 .helpYou{
     padding: 60px 20px 40px;
@@ -2339,16 +2348,25 @@ flex-shrink: 0;
 }
 .fullScr{
     display: flex;
+    flex-direction: column;
     background-color: rgb(254,241,238);
-    flex-flow: wrap;
+    align-items: center;
     width: 100%;
-    max-width: 1184px;
 }
 .resCol{
+    display: flex;
+    flex-flow: wrap;
+    max-width: 1184px;
+    width: 100%;
+}
+.marEach1{
     max-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
+    min-width: 0px;
 }
 .firstscroll,.secondScroll,.thirdScroll,.fourScroll{
     margin: 0px;
@@ -2371,11 +2389,7 @@ flex-shrink: 0;
     object-fit: cover;
     object-position: center center;
 }
-.resMinibarr{
-    height: 344px;
-    width: 307px;
-}
-.returnPack1,.flowersFor2,.RestockBar2,.whatYour2{
+.returnPack1,.flowersFor2,.RestockBar2,.whatYour2,.Signuphead,.growBusi2{
     margin-top: 20px;
     font-size: 40px;
     line-height: 40px;
@@ -2390,7 +2404,7 @@ flex-shrink: 0;
     font-size: 14px;
     line-height: 20px;
 }
-.resPlastic,.resJustimg{
+.resPlastic,.resJustimg,.rescarr,.resmenImg{
     display: block;
     width: 100%;
     height: 500px;
@@ -2412,5 +2426,196 @@ flex-shrink: 0;
     min-width: 90%;
     -webkit-box-align: center;
     align-items: center;
+}
+.signText{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Signuphead{
+    text-align: left;
+    justify-content: left;
+    align-items: left !important;
+}
+.paddingPink1{
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 80px;
+}
+.flexwom{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    max-width: 1184px;
+}
+.busiText{
+    margin-bottom: 13px;
+}
+.growBusi{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: center;
+}
+.getMorepadding{
+    max-width: 1130px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.topCities{
+    flex-direction: column;
+}
+.topCities2{
+    border-bottom: 3px solid #191919ff;
+}
+.popuCat2{
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+}
+.popularcatagories{
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+}
+.getLet{
+    flex: 1 1 0%;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    gap: 12px;
+}
+.getLet2,.letUs{
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+}
+#marpx{
+    margin-bottom: 8px;
+}
+.lastFooter{
+    flex-direction: row;
+    /* gap: -16px; */
+}
+.lstfooCon{
+    margin: 0px;
+}
+.lang6{
+    justify-content: center;
+}
+.socialMedia{
+    justify-content: center;
+}
+.lang1{
+    padding: 0px;
+}
+}
+@media screen and (min-width:960px){
+.SignIIn{
+    display: none;
+}
+#DoorR{
+    width: 42px;
+    height: 24px;
+}
+#DoorF{
+    width: 155px;
+    height: 18px;
+}
+.doorFull{
+    margin-left: 12px;
+}
+.belowDoor{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+.heading1{
+    max-width: 750px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+    white-space: nowrap;
+}
+.signSave{
+    width: 100%;
+    box-sizing: border-box;
+    color: rgb(25,25,25);
+    font-family: Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.01px;
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    display: block;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0px;
+}
+.resWrapp,.resFlowerss,.resMinibarr,.resDoggyneed,.scrollFirst,.scrollSecond,.scrollThird,.scrollFour{
+    height: 440px;
+}
+.rescarr,.resmenImg{
+    height: 500px;
+    width: 460px;
+}
+.footerRest{
+    flex-direction: row;
+}
+.appgoogle{
+    flex: 1 1 0%;
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.appGooglepadding{
+    padding-top: 32px;
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: flex-end;    
+}
+.belowGooplay{
+    flex: none;
+}
+.getLet{
+    gap: 30px;
+    justify-content: space-between;
+}
+}
+@media screen and (min-width:1024px){
+.resWrapp,.resFlowerss,.resMinibarr,.resDoggyneed{
+    height: 472px;
+}
+.firstscroll,.secondScroll,.thirdscroll,.fourscroll{
+    min-height: 746px;
+    height: auto;
+}
+.returnPack,.flowersFor,.RestockBar,.whatYour{
+    margin-top: 30px;
+}
+/* .dashLess{
+    width: 524px;
+    height: 500px;
+} */
+.rescarr,.resmenImg,.resJustimg{
+    width: 524px;
+    height: 500px;
+}
+.fooy{
+
 }
 }
